@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recurso>
+    <titulo>Trigonometria e Halos</titulo>
+    <descricao>O software simula a emissão e refração de raios luminosos a fim de perimitir a compreenão dos halos solares e lunares. Este software educacional assume como conhecida pelo usuário a Lei de Snell para refração da luz.</descricao>
+    <estado>finalizado</estado>
+    <imagem>refracao.jpg</imagem>
+	<tipo>Animação e Simulação</tipo>
+	<objetivos>Investigar e compreender o fenômeno dos halos lunares e solares através de uma análise trigonométrica da refração de raios luminosos em certas formas geométricas.</objetivos>
+	<observacoes>É necessário plugin Flash 9.0 ou mais recente e máguina Java 1.6 ou mais recente.</observacoes>
+	<nivel>Ensino Médio</nivel>
+	<componente>Matemática / Física</componente>
+	<temas>Geometria e Medidas / Som, Imagem e Informação</temas>
+	<autores>Samuel Rocha de Oliveira, Leonardo Barichello</autores>
+	<palavras_chaves>Unicamp, Projeto M³, software educacional, matemática, trigonometria, seno, raios luminosos, refração, lei de snell, halos, solares, lunares</palavras_chaves>
+	<assunto>Trigonometria, Função Seno e Função Arco Seno; Física, Raios Luminosos e Lei de Snell.</assunto>
+</recurso>
