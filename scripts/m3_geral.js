@@ -3,41 +3,39 @@
  ********************/
 // Retorna uma Array com todas as inputs que começam com "parte"
 function pegaNomesResp() {
-	var allElements = document.getElementsByTagName('*');
-	
-	var allNames = Array();
-	
-	for (var i=0;i<allElements.length;i++) {
-		if ((allElements[i].id!=null) && (allElements[i].id.startsWith('parte')) ) {
-			allNames.push(allElements[i].id);
-		}
-	}
-	return allNames.uniq();
+    var allElements = document.getElementsByTagName('*');
+
+    var allNames = Array();
+
+    for (var i = 0; i < allElements.length; i++) {
+        if ((allElements[i].id != null) && (allElements[i].id.startsWith('parte'))) {
+            allNames.push(allElements[i].id);
+        }
+    }
+    return allNames.uniq();
 }
 
 // Retorna o elemento do video Flash com o nome movieName
 function getFlashMovie(movieName) {
-	
-	var isIE = navigator.appName.indexOf("Microsoft") != -1;
-	return (isIE) ? window[movieName] : document[movieName];
+
+    var isIE = navigator.appName.indexOf("Microsoft") != -1;
+    return (isIE) ? window[movieName] : document[movieName];
 }
 
 //Funcao que pega no flash o valor da resposta do id passado.
-function getResp(id)
-{
-	return ( getFlashMovie('SalvaLocal').Pega(nomeSoft,id)=='undefined' ? '' : getFlashMovie('SalvaLocal').Pega(nomeSoft,id));
+function getResp(id) {
+    return ($('SalvaLocal').Pega(nomeSoft, id) == 'undefined' ? '' : $('SalvaLocal').Pega(nomeSoft, id));
 }
 
-function setResp(id,valor)
-{
-	getFlashMovie('SalvaLocal').Salva(nomeSoft,id,valor);
+function setResp(id, valor) {
+    $('SalvaLocal').Salva(nomeSoft, id, valor);
 }
 
 //Funcao que guarda no flash o valor da resposta do id passado.
- 
+
 // Apaga todas as resposta guardadas.
 function apagaTodasResp() {
-	return (getFlashMovie('SalvaLocal').ApagaTudo(nomeSoft));
+    return ($('SalvaLocal').ApagaTudo(nomeSoft));
 }
 
 /* Retorna uma string de uma estrutura XML
@@ -45,19 +43,19 @@ function apagaTodasResp() {
  * **NOTA** No Geogebra 3.2 nao parece ser necessário realizar esse passo.
  */
 function xml2Str(xmlNode) {
-	try {
-		// Gecko-based browsers, Safari, Opera.
-		return (new XMLSerializer()).serializeToString(xmlNode);
-	} catch (e) {
-		try {
-			// Internet Explorer.
-			return xmlNode.xml;
-		} catch (e) {  
-			//Other browsers without XML Serializer
-			alert('Xmlserializer not supported');
-		}
-	}
-	return false;
+    try {
+        // Gecko-based browsers, Safari, Opera.
+        return (new XMLSerializer()).serializeToString(xmlNode);
+    } catch (e) {
+        try {
+            // Internet Explorer.
+            return xmlNode.xml;
+        } catch (e) {
+            //Other browsers without XML Serializer
+            alert('Xmlserializer not supported');
+        }
+    }
+    return false;
 }
 
 /**
@@ -65,9 +63,8 @@ function xml2Str(xmlNode) {
  * @param {Object} valor
  */
 function validaResp(valor) {
-	if(valor == '') {
-		return false;
-	}
-	return true;
+    if (valor == '') {
+        return false;
+    }
+    return true;
 }
-
