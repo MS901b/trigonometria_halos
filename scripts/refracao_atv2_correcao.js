@@ -8,11 +8,6 @@ Event.observe(window, 'load', function() {
 });
 
 
-document.observe("flash:SalvaLocal", function() {
-    SalvaLocalLoaded = true;
-    checkInits();
-});
-
 function ggbOnInit() {
     GGBLoaded = true;
     checkInits();

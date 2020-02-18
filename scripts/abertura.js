@@ -61,11 +61,6 @@ function detectar_mobile() {
 
 function analisaAmbiente()
 {
-	/*var flashRequiredMajorVersion = 9.0;
-	var flashRequiredMinorVersion = 0;
-	var flashRequiredRevision = 0;
-	var javaRequiredVersion="1.4+";
-	var hasReqestedVersion = DetectFlashVer(flashRequiredMajorVersion, flashRequiredMinorVersion, flashRequiredRevision);*/
 
 	var protocol = window.location.protocol;
 
@@ -104,22 +99,5 @@ function analisaAmbiente()
 		var tmp = new PopupDesesperados(conteudo, 20);
 		return;
 	}
-	//Flash e java não são mais necessarios
-	/*if (!hasReqestedVersion)
-	{
-		var conteudo = '<p><strong>Erro de compatibilidade – Adobe Flash Player</strong></p><p>A versão mínima necessária do plugin para usar este software é <strong><em>Adobe Flash Player '+flashRequiredMajorVersion+'</em></strong>.</p>';
-		conteudo += '<p style="float:right;"><a href="detect.html">Ver relatório de compatibilidade completo</a></p><br class="limpador" />';
-		conteudo += '<p><a id="fechar_desesperado" style="float:right; href="#">Fechar</a><a id="continuar_mesmo_assim" style="float:right; margin-right:10px;"" href="#">Continuar mesmo assim</a><a style="float:right; margin-right:10px;" href="http://www.adobe.com/go/getflash">Instalar o Plugin do Flash</a></p><br class="limpador" />';
-		var tmp = new PopupDesesperados(conteudo, 20);
-		return;
-	}
 
-	if (!deployJava.versionCheck(javaRequiredVersion))
-	{
-		var conteudo = '<p><strong>Erro de compatibilidade – Java Virtual Machine</strong></p><p>A versão mínima necessária da Java Virtual Machine para usar este software é <strong><em>'+javaRequiredVersion+'</em></strong>.</p>';
-		conteudo += '<p style="float:right;"><a href="detect.html">Ver relatório de compatibilidade completo</a></p><br class="limpador" />';
-		conteudo += '<p><a id="fechar_desesperado" style="float:right; href="#">Fechar</a><a id="continuar_mesmo_assim" style="float:right; margin-right:10px;"" href="#">Continuar mesmo assim</a><a style="float:right; margin-right:10px;" href="http://www.java.com">Instalar Java VM</a></p><br class="limpador" />';
-		var tmp = new PopupDesesperados(conteudo, 20);
-		return;
-	}*/
 }

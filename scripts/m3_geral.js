@@ -1,5 +1,5 @@
 ﻿/********************
- * Funcoes do Flash *
+ * Funcoes do armazenamento *
  ********************/
 // Retorna uma Array com todas as inputs que começam com "parte"
 function pegaNomesResp() {
@@ -15,14 +15,8 @@ function pegaNomesResp() {
     return allNames.uniq();
 }
 
-// Retorna o elemento do video Flash com o nome movieName
-function getFlashMovie(movieName) {
 
-    var isIE = navigator.appName.indexOf("Microsoft") != -1;
-    return (isIE) ? window[movieName] : document[movieName];
-}
-
-//Funcao que pega no flash o valor da resposta do id passado.
+//Funcao que pega o valor da resposta do id passado.
 function getResp(id) {
     return ($('SalvaLocal').Pega(nomeSoft, id) == 'undefined' ? '' : $('SalvaLocal').Pega(nomeSoft, id));
 }
@@ -31,7 +25,7 @@ function setResp(id, valor) {
     $('SalvaLocal').Salva(nomeSoft, id, valor);
 }
 
-//Funcao que guarda no flash o valor da resposta do id passado.
+//Funcao que guarda o valor da resposta do id passado.
 
 // Apaga todas as resposta guardadas.
 function apagaTodasResp() {

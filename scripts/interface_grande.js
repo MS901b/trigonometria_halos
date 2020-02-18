@@ -34,9 +34,9 @@ Event.observe(window, 'load', function() {
             }
         }
         $('link_acessibilidade').href = 'javascript:setActiveStyleSheet("normal");';
-    } else {
+    } /*else {
         $('link_acessibilidade').href = 'javascript:setActiveStyleSheet("grande");';
-    }
+    }*/
 });
 
 
