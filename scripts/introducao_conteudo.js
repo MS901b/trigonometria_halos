@@ -1,21 +1,23 @@
 /*
-	Padronização do ID: 
+	Padronizaï¿½ï¿½o do ID: 
 		- [['p/parte','q/questao','/item'],'_'] vai gerar um id do tipo p1_q2_1
 		- [['p/parte','q/questao','/itemletra'],'_'] vai gerar um id do tipo p1_q2_a
 	Palavras-chave: questao, parte, item, itemletra, subitem
 	Devem ser precedidas de uma barra '/'.
-	A palavra-chave subitem será usada somente em questões com mais de um campo
+	A palavra-chave subitem serï¿½ usada somente em questï¿½es com mais de um campo
 */
- 
-var IdPadrao = [['parte/parte','q/questao','/itemletra','/subitem'],'_'];
+
+var IdPadrao = [
+    ['parte/parte', 'q/questao', '/itemletra', '/subitem'], '_'
+];
 
 /*
 	Questoes
 	
-	Aqui ficam concentrados todos os conteudos das questões da atividade!
-	Veja que está separado por Parte/Questão/Item
+	Aqui ficam concentrados todos os conteudos das questï¿½es da atividade!
+	Veja que estï¿½ separado por Parte/Questï¿½o/Item
 	
-	ATENÇÃO: Cada tipo possui um formato de entrada característico.
+	ATENï¿½ï¿½O: Cada tipo possui um formato de entrada caracterï¿½stico.
 */
 var Partes = null;
 var nomeSoft = "halos2";
@@ -25,16 +27,16 @@ var Questoes = null;
 	Bloco de Notas
 	
 	Nesse Array ficam os dados que aparecem no Bloquinho de notas.
-	Se você for na linha 35 do exemplo_correcao.js verá que está sendo criada uma instância
-	de "Blocao", uma classe de bloco de notas que permite tabelas no conteúdo. Se não for
+	Se vocï¿½ for na linha 35 do exemplo_correcao.js verï¿½ que estï¿½ sendo criada uma instï¿½ncia
+	de "Blocao", uma classe de bloco de notas que permite tabelas no conteï¿½do. Se nï¿½o for
 	usar tabelas no Software, altere para "Bloco". Ambas classes utilizam a variavel global
-	MeuBloco para preencher o seu conteúdo.
+	MeuBloco para preencher o seu conteï¿½do.
 */
 
 var MeuBloco = new Array();
 
 
-Event.observe(window, 'load', function(){
-	BlocoNotas = new Blocao();
+Event.observe(window, 'load', function() {
+    BlocoNotas = new Bloco();
 
 });
