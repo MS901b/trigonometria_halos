@@ -42,7 +42,7 @@ var Questoes = [{ //Parte 1
                 depois: 'graus',
                 corrigir: corrige_q_1_b,
                 enunciado: 'Qual é o ângulo de saída se, partindo da água,  o raio incidir na superfície com um ângulo igual a 30&#176;?',
-                msgErro: 'Utilize a Lei de Snell com &#945; igual a 30&#176; e k=1,33.',
+                msgErro: 'Utilize a Lei de Snell com β igual a 30° e k=1,33.',
                 msgAjuda: 'Se desejar, use a calculadora para os cálculos'
             }
         ]
